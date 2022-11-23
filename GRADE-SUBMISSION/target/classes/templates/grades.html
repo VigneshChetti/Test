@@ -1,0 +1,27 @@
+<html>
+<head>
+<body>
+     
+     <div>
+     <h2>Grades </h2>
+
+  <table id="table">
+        <tr>
+           <th>Student</th>
+           <th>Grade</th>
+           <th>Subject</th>
+        </tr>
+        
+        <tr th:object="${grade}">
+        <td th:text="*{name}"></td>
+        <td "*{subject}"></td>
+        <td "*{score}"></td>
+        
+        </tr>
+        
+    </table>
+     </div>
+
+</body>
+</head>
+</html>
